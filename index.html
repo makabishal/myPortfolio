@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>My Portfolio</title>
-  </head>
-  <body>
-    <h1>Bishal Baba Maka</h1>
-  </body>
+    <script>
+        window.onload = function() {
+            var userName = prompt("What's your name?");
+            if (userName) {
+                document.getElementById('greeting').textContent = "Fuck You, " + userName + "!";
+            } else {
+                document.getElementById('greeting').textContent = "Welcome! Please refresh the page to enter your name.";
+            }
+        };
+    </script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <pre>
+         / \
+        |\_/|
+        |---|
+        |   |
+        |   |
+      _ |=-=| _
+  _  / \|   |/ \
+ / \|   |   |   ||\
+|   |   |   |   | \>
+|   |   |   |   |   \
+| -   -   -   - |)   )
+|                   /
+ \                 /
+  \               /
+   \             /
+    \           /
+        </pre>
+    </div>
+    <div>
+        <h1 id="greeting"></h1>
+    </div>
+</body>
 </html>
